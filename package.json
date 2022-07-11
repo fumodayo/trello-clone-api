@@ -1,0 +1,29 @@
+{
+  "name": "trello-clone-api",
+  "version": "1.0.0",
+  "description": "APIs for trello clone app",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eslint": "eslint src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thairyo/trello-clone-api.git"
+  },
+  "keywords": [],
+  "author": "sonthai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thairyo/trello-clone-api/issues"
+  },
+  "homepage": "https://github.com/thairyo/trello-clone-api#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.18.2",
+    "eslint": "^8.19.0"
+  }
+}
