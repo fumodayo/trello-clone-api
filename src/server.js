@@ -13,7 +13,7 @@ connectDB()
 const bootServer = () => {
   const app = express();
 
-  app.get("/", async (req, res) => {
+  app.get("/test", async (req, res) => {
     res.end("<h1>Hello world</h1><hr/>");
   });
 
