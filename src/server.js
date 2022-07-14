@@ -14,7 +14,7 @@ const bootServer = () => {
   const app = express();
 
   app.get("/test", async (req, res) => {
-    res.end("<h1>Hello world</h1><hr/>");
+    res.end("<h1>Test connection!</h1><hr/>");
   });
 
   app.listen(env.APP_PORT, env.APP_HOST, () => {
