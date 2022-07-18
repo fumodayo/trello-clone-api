@@ -6,7 +6,7 @@ const router = express.Router();
 
 router
   .route("/")
-  // .get((req, res) => console.log("Get boards"))
+  // .get((req, res) => console.log("GET boards"))
   .post(BoardValidation.createNew, BoardController.createNew);
 
 export const boardRoutes = router;
