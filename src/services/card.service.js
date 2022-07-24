@@ -1,9 +1,18 @@
 import { CardModel } from "*/models/card.model";
+import { ColumnModel } from "*/models/column.model";
 
 const createNew = async (data) => {
   try {
-    const result = await CardModel.createNew(data);
-    return result;
+    // transaction mongodb
+    const newCard = await CardModel.createNew(data);
+
+    // update columnOrder Array in board collection
+    await ColumnModel.pushCardOrder(
+      newCard.columnId.toString(),
+      newCard._id.toString()
+    );
+
+    return newCard;
   } catch (error) {
     throw new Error(error);
   }
